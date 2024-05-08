@@ -38,6 +38,9 @@ header {
     flex-direction: row;
     align-items: center;
     box-shadow: 2px 2px 3px 3px rgb(66, 25, 160);
+    background-image: url(../images/dp2.jpg);
+    background-position: center;
+    background-size: cover;
 }
 header img {
     height: 150px;
@@ -192,6 +195,14 @@ header:hover{
     border-radius: 5px;
     box-shadow: 1px 1px 2px 2px rgb(66, 25, 160);
 }
+.form-pic {
+    height: 100%;
+    background-color: white;
+    width: 50%;
+    background-image: url(../images/dp2.jpg);
+    background-position: center;
+    background-size: cover;
+}
 .contact-form label{
     height: 90px;
     width: 96%;
@@ -214,6 +225,7 @@ header:hover{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: medium;
     box-shadow: 1px 1px 2px 2px rgb(66, 25, 160);
+    margin-top: 3px;
     margin-bottom: 5px;
 }
 .contact-form form{

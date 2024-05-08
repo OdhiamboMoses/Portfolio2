@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.spinner {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+}
+
+.spinner ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.spinner ul li {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    background-color: #333;
+    color: white;
+    transform-origin: center;
+    transition: transform 0.5s;
+}
+
+.spinner ul li:hover {
+    transform: rotate(30deg);
+}
+
+.spinner ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}

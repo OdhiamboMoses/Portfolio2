@@ -30,6 +30,8 @@ header {
     background-color: white;
     position: absolute;
     left: -190px;
+    top: 100px;
+    z-index: 99;
     margin-top: 1%;
     position: fixed;
     display: flex;
@@ -43,7 +45,16 @@ header img {
     border-radius: 50%;
     position: absolute;
     right: 130px;
-    z-index: 100;
+    z-index: 200;
+}
+
+.nav2 img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    z-index: 200;
 }
 
 header nav ul {
@@ -150,12 +161,77 @@ header>nav a:hover{
     color: #A9EB14;
 }
 header nav ul li a {
-    display: inline-block; /* Ensures the anchor elements are displayed as blocks */
-    transform-origin: center; /* Set the transform origin to the center of each link */
+    display: inline-block;
+    transform-origin: center;
 }
 
 header:hover{
-    transform: rotate(360deg); /* Rotate the anchor elements by 360 degrees on hover */
-    transition: transform 0.8s; /* Apply a smooth transition */
+    transform: rotate(360deg); 
+    transition: transform 1.90s; 
 }
 
+.nav2:hover{
+    transform: rotate(360deg); 
+    transition: transform 1.89s; 
+}
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4%;
+    background-color: #A9EB14;
+    height: 490px;
+    gap: 10px;
+    border-radius: 15px;
+    color: rgb(58, 21, 145);
+
+}
+.contact-form img {
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 2px rgb(66, 25, 160);
+}
+.contact-form label{
+    height: 90px;
+    width: 96%;
+    margin-bottom: 15px;
+}
+.contact-form input{
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px solid rgb(66, 25, 160);
+    box-shadow: 1px 1px 2px 2px rgb(66, 25, 160);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+.contact-form textarea{
+    width: 100%;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    box-shadow: 1px 1px 2px 2px rgb(66, 25, 160);
+    margin-bottom: 5px;
+}
+.contact-form form{
+    margin-left: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+.contact-form button{
+    height: 40px;
+    width: 90px;
+    padding: 10px;
+    background-color: rgb(66, 25, 160);
+    color: white;
+    border-radius: 5px;
+
+}
+.contact-form button:hover {
+    background-color: white;
+    color: rgb(66, 25, 160);
+}

@@ -115,15 +115,15 @@ header img {
         color: white;
         font-size: larger;
     }
-    #menu-toggler{
-        display: none;
-    }
     .main-content>span>ul>li{
         margin-bottom: 3%;
         padding: 10px;
     }
     .main-content>span>ul>li:hover{
         background-color: #A9EB14;
+    }
+    #menu-toggler{
+        display: block;
     }
 }
 

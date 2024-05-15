@@ -78,9 +78,9 @@ menuIcon.addEventListener("click", function(){
 });
 
 function toggleMenu(){
-    if(menuToggler.style.display === "block"){
-        menuToggler.style.display = "none";
+    if(menuToggler.style.display === 'block'){
+        menuToggler.style.display = 'none';
     }else{
-        menuToggler.style.display = "block";
+        menuToggler.style.display = 'block';
     }
 };

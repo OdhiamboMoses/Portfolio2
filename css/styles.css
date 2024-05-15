@@ -59,6 +59,73 @@ header img {
     right: 10px;
     z-index: 200;
 }
+.main-content{
+    margin-left: 25%;
+    color: white;
+    padding-top: 2%;
+    text-align: justify;
+    padding-right: 5%;
+}
+.main-content>span>button{
+    padding: 12px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-size: x-large;
+}
+.main-content>span>ul>li{
+    list-style: none;
+    font-size: medium;
+    background-color: white;
+}
+.main-content>span button{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+.main-content>span>ul>li a{
+    text-decoration: none;
+    color:rgb(66, 25, 160);
+}
+#menu-toggler{
+    display: none;
+}
+@media screen {
+    .main-content>span>button{
+        display: none;
+    }
+}
+@media (max-width:550px){
+    header{
+        display: none;
+    }
+    .nav2 {
+        display: none;
+    }
+    .main-content {
+        margin-left: 1%;
+    }
+    .main-content>span>button{
+        display: block;
+        margin-bottom: 3%;
+        background-color: #A9EB14;
+    }
+    .main-content>span>button:hover{
+        background-color:rgb(66, 25, 160);
+        color: white;
+        font-size: larger;
+    }
+    #menu-toggler{
+        display: none;
+    }
+    .main-content>span>ul>li{
+        margin-bottom: 3%;
+        padding: 10px;
+    }
+    .main-content>span>ul>li:hover{
+        background-color: #A9EB14;
+    }
+}
 
 header nav ul {
     list-style: none;
@@ -120,13 +187,7 @@ header nav ul li a {
     transform: rotate(120deg) translateY(-250px) rotate(-120deg);
 }
 
-.main-content{
-    margin-left: 25%;
-    color: white;
-    padding-top: 2%;
-    text-align: justify;
-    padding-right: 5%;
-}
+
 .main-content>.intro-p{
     margin-top: 2%;
 }
@@ -163,19 +224,20 @@ header>nav a:hover{
     text-decoration: none;
     color: #A9EB14;
 }
+.socials ul{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: medium;
+    float: right;
+}
 header nav ul li a {
     display: inline-block;
     transform-origin: center;
 }
-
-header:hover{
-    transform: rotate(360deg); 
-    transition: transform 1.90s; 
-}
-
 .nav2:hover{
-    transform: rotate(360deg); 
-    transition: transform 1.89s; 
+    transform: rotate(720deg); 
+    transition: transform 11.89s; 
 }
 .contact-form {
     display: flex;
@@ -202,6 +264,11 @@ header:hover{
     background-image: url(../images/dp2.jpg);
     background-position: center;
     background-size: cover;
+}
+@media (max-width:550px) {
+    .form-pic {
+        display: none;
+    }
 }
 .contact-form label{
     height: 90px;
@@ -246,4 +313,34 @@ header:hover{
 .contact-form button:hover {
     background-color: white;
     color: rgb(66, 25, 160);
+}
+.intro-p button {
+    background-color: rgb(66, 25, 160);
+    color: #A9EB14;
+    padding: 10px;
+    float: right;
+    border-radius: 10px;
+    margin:1%;
+}
+.intro-p button:hover{
+    background-color:#A9EB14;
+    color: rgb(66, 25, 160);
+    cursor: pointer;
+}
+
+.contact-form span{
+    color: red;
+}
+
+.About-main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    margin-top: 2%;
+}
+.about-pic img{
+    width: 50%;
+    margin-top: 2%;
+    box-shadow: 1px 2px 1px 2px #A9EB14;
+    border-radius: 6px;
 }

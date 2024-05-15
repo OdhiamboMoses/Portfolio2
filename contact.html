@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mansir</title>
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main>
@@ -23,19 +24,29 @@
         <div class="nav2">
         </div>
         <section class="main-content">
+            <span><li><a href="#" id="menu-icon"><i class="fa-solid fa-bars"></i></li></a></span>
+            <span id="menu-toggler">
+                <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact-Us</a></li>
+                </ul>
+            </span>
             <h1>Contact Me</h1>
             <div class="contact-form">
                 <div class="form-pic">
 
                 </div>
                 <form action="">
-                    <label for="name">Enter Your Name :</label><br>
-                    <input type="text"><br>
-                    <label for="name">Enter Your Email :</label><br>
-                    <input type="text"><br>
-                    <label for="name">Type Your Message :</label><br>
-                    <textarea name="message" id="message-cont" cols="30" rows="10"></textarea><br>
-                    <button type="submit">Send</button>
+                    <label for="name">Enter Your Name : <span>*</span></label><br>
+                    <input type="text" required id="myName"><br>
+                    <label for="name">Enter Your Email : <span>*</span></label><br>
+                    <input type="email" required id="emailx"><br>
+                    <label for="name">Type Your Message : <span>*</span></label><br>
+                    <textarea name="message" id="messagex" cols="30" rows="10" required></textarea><br>
+                    <button type="submit" id="btn-contact" onclick="submitBtn()">Send</button>
                 </form>
             </div>
         </section>

@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mansir</title>
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main>
         <header>
             <nav>
                 <ul>
-                    <li class="lin-1"><a href="projects.html">Projects</a></li>
-                    <li class="lin-2"><a href="about.html">About</a></li>
-                    <li class="lin-3"><a href="index.html" class="active">Home</a></li>
-                    <li class="lin-4"><a href="services.html">Services</a></li>
-                    <li class="lin-5"><a href="contact.html">Contact-Us</a></li>
+                    <li class="lin-1"><a href="projects.html" id="hdBtn">Projects</a></li>
+                    <li class="lin-2"><a href="about.html" id="hdBtn">About</a></li>
+                    <li class="lin-3"><a href="index.html" class="active" id="hdBtn">Home</a></li>
+                    <li class="lin-4"><a href="services.html" id="hdBtn">Services</a></li>
+                    <li class="lin-5"><a href="contact.html" id="hdBtn">Contact-Us</a></li>
                 </ul>
             </nav>
             
@@ -23,9 +24,21 @@
         <div class="nav2">
         </div>
         <section class="main-content">
+            <span><button id="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button></span>
+            <span id="menu-toggler">
+                <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact-Us</a></li>
+                </ul>
+            </span>
             <h1>Personal Portfolio</h1>
             <div class="intro-p">
                 <h3>Odhiambo Moses</h3>
+                <button id="bgbtn" class="bgbtn1" onclick="changeBg()">Change Mode</button>
+                <button onclick="changeBg2()" class="bgbtn1">Reset Mode</button>
                 <p>
                     I am a fullstack frontend and backend developer. 
                 </p>
@@ -36,11 +49,12 @@
             </div>
             <div class="socials">
                 <ul>
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">X</a></li>
-                    <li><a href="#">Youtube</a></li>
-                    <li><a href="#">Gmail</a></li>
-                    <li><a href="#">tiktok</a></li>
+                    <li><a href="https://github.com/OdhiamboMoses" target="_blank"><i class="fa-brands fa-square-github"></i> Odhiambo Moses</a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i> @Musa_Odhiambo08</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCLAX4uQd0qSN5UduTYDKx8w" target="_blank"><i class="fa-brands fa-youtube"></i> Odhimbo Moses</a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i> odhiambomoses08@gmail.com</a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i> @odhiambo.moses</a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i> Odhiambo Moses</a></li>
                 </ul>
             </div>
         </section>

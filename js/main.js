@@ -38,6 +38,24 @@ namex.addEventListener("keypress", function(e){
 })
 
 
+
+let menuIcon = document.getElementById("menu-icon");
+console.log(menuIcon);
+let menuToggler = document.getElementById("menu-toggler");
+console.log(menuToggler);
+
+menuIcon.addEventListener("click", function(){
+    toggleMenu();
+});
+
+function toggleMenu(){
+    if(menuToggler.style.display === 'block'){
+        menuToggler.style.display = 'none';
+    }else{
+        menuToggler.style.display = 'block';
+    }
+};
+
 let placeHolder2 = " ";
 let emailx = document.getElementById("emailx");
 console.log(emailx);
@@ -69,18 +87,3 @@ function formCheck()
         alert("enter valid data");
     }
 }
-
-let menuIcon = document.getElementById("menu-icon");
-let menuToggler = document.getElementById("menu-toggler");
-
-menuIcon.addEventListener("click", function(){
-    toggleMenu();
-});
-
-function toggleMenu(){
-    if(menuToggler.style.display === 'block'){
-        menuToggler.style.display = 'none';
-    }else{
-        menuToggler.style.display = 'block';
-    }
-};

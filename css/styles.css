@@ -87,11 +87,11 @@ header img {
     text-decoration: none;
     color:rgb(66, 25, 160);
 }
-#menu-toggler{
-    display: none;
-}
 @media screen {
     .main-content>span>button{
+        display: none;
+    }
+    #menu-toggler{
         display: none;
     }
 }
@@ -230,6 +230,11 @@ header>nav a:hover{
     gap: 12px;
     font-size: medium;
     float: right;
+}
+@media (max-width:550px){
+    .socials ul{
+        float: left;
+    }
 }
 header nav ul li a {
     display: inline-block;

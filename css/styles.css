@@ -65,6 +65,7 @@ header img {
     padding-top: 2%;
     text-align: justify;
     padding-right: 5%;
+    font-size: larger;
 }
 .main-content>span>button{
     padding: 12px;
@@ -348,4 +349,20 @@ header nav ul li a {
     margin-top: 2%;
     box-shadow: 1px 2px 1px 2px #A9EB14;
     border-radius: 6px;
+}
+.container {
+    margin-top: 2%;
+    float: right;
+    font-size: larger;
+}
+.container a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container a:hover{
+    color: #A9EB14;
+}
+.container ul{
+    list-style: none;
 }

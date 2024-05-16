@@ -241,6 +241,10 @@ header nav ul li a {
     display: inline-block;
     transform-origin: center;
 }
+header:hover{
+    transform: rotate(360deg); 
+    transition: transform 0.69s;
+}
 .nav2:hover{
     transform: rotate(720deg); 
     transition: transform 11.89s; 

@@ -370,3 +370,34 @@ header:hover{
 .container ul{
     list-style: none;
 }
+.services-cont {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.services-table table, tr, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+.services-table table{
+    height: 140px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.tdhead {
+    background-color: #A9EB14;
+    border-radius: 5px;
+    color: rgb(66, 25, 160);
+}
+.services-table a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: #A9EB14;
+    margin-top: 3%;
+    border-radius: 10px;
+    float: right;
+}
+.services-table a:hover{
+    background-color: rgb(85, 253, 85);
+}

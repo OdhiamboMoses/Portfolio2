@@ -41,3 +41,8 @@ function changeBg2()
         hd.style.backgroundColor = "#A9EB14";
     ; 
 };
+
+let hirebtn = document.getElementById("hireBtn");
+hirebtn.addEventListener('click', function(){
+    alert("I have been Cliked, Type your message on the loading form. On your way to professional websites.");
+});

@@ -28,9 +28,10 @@ function changeBg()
 {
     btn.addEventListener('click', (e) => {
         e.preventDefault();
+        alert("Home page mode changed successfuly.");
         bodycont.style.backgroundColor = "black";
+        btn.style.backgroundColor = "white";
         hd.style.backgroundColor = "white";
-        hdBtn.style.backgroundColor = "#A9EB14";
         hd.style.color = "black";
     }); 
 };
@@ -39,7 +40,9 @@ function changeBg2()
     // btn.addEventListener('click', (e) => {
     //     e.preventDefault();
         bodycont.style.backgroundColor = "rgb(66, 25, 160)";
+        btn.style.backgroundColor = "rgb(66, 25, 160)";
         hd.style.backgroundColor = "#A9EB14";
+        alert("reset Successfull.");
     ; 
 };
 

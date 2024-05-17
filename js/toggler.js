@@ -27,12 +27,11 @@ let pcont = document.getElementsByClassName("main-content");
 function changeBg()
 {
     btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        alert("Home page mode changed successfuly.");
         bodycont.style.backgroundColor = "black";
         btn.style.backgroundColor = "white";
         hd.style.backgroundColor = "white";
         hd.style.color = "black";
+        alert("Home page mode changed successfuly.");
     }); 
 };
 function changeBg2()

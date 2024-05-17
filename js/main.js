@@ -17,10 +17,10 @@ function changeBg()
 {
     btn.addEventListener('click', (e) => {
         e.preventDefault();
-        bodycont.style.backgroundColor = "#A9EB14";
-        hd.style.backgroundColor = "rgb(66, 25, 160)";
+        bodycont.style.backgroundColor = "black";
+        hd.style.backgroundColor = "white";
         hdBtn.style.backgroundColor = "#A9EB14";
-        hd.style.color = "black";
+        hd.style.color = "#black";
     }); 
 };
 function changeBg2()

@@ -27,10 +27,11 @@ let pcont = document.getElementsByClassName("main-content");
 function changeBg()
 {
     btn.addEventListener('click', (e) => {
-        bodycont.style.backgroundColor = "#A9EB14";
-        hd.style.backgroundColor = "rgb(66, 25, 160)";
-        hdbtn.style.backgroundColor = "#A9EB14";
-        hd.style.color = "#00000";
+        e.preventDefault();
+        bodycont.style.backgroundColor = "black";
+        hd.style.backgroundColor = "white";
+        hdBtn.style.backgroundColor = "#A9EB14";
+        hd.style.color = "black";
     }); 
 };
 function changeBg2()
